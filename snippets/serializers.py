@@ -1,6 +1,5 @@
-from django.core.exceptions import RequestAborted
 from rest_framework import serializers
-from .models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+from .models import Snippet
 
 class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
