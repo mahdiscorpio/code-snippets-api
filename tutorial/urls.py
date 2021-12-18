@@ -23,8 +23,8 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    # path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # path('snippets/', include("snippets.urls", namespace="snippets")),
-    path('', include("snippets.urls", namespace="snippets")),
+    path('', include("snippets.urls")),
 ]
